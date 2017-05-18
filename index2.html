@@ -1,0 +1,34 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+       var months = new Array(12);
+       var monthSales = new Array(12);
+months[0] = "styczeń";
+months[1] = "luty";
+months[2] = "marzec";
+months[3] = "kwiecień";
+months[4] = "maj";
+months[5] = "czerwiec";
+months[6] = "lipiec";
+months[7] = "sierpień";
+months[8] = "wrzesień";
+months[9] = "październik";
+months[10] = "lisopad";
+months[11] = "grudzień";
+
+for ( i=0; i <12; i++)
+    {
+        checker = "podaj wartość transakcji z danego miesiaca: '";
+        checker += months[i];
+        monthSales[i] = prompt(checker);
+    }
+for (i = 0; i<12; i++)
+    {
+        document.write(months[i]+" - sprzedaz w miesiacu to ");
+        document.write(monthSales[i]+ "złotych<br>");
+    }
+        </script>
+        </body>
+    </html>
