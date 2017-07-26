@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+<script>
+    var compNum = Math.floor(Math.random() * 100) + 1;
+    var tries = 0;
+    alert("to zabawa w zgadywanie liczby od 1-100");
+    do {
+    guess = prompt("jak sadzisz jaka to liczba:");
+    if (guess < compNum){
+        document.write("za niska wartosc proboj dalej");
+    }
+    else if (guess >compNum){
+            document.write("za wysoka wartosc proboj dalej");
+            }
+    tries++;
+    } while (guess != compNum);
+    alert ("odgadles liczba prob to:" + tries);
+    </script>
+    
+</body>
+</html>
